@@ -44,20 +44,20 @@ def words_printed_random(poem_file):
 # main function which runs the program
 def main():
     poem_file = "poems/Sonnet_41.txt"
-    print_user_poem = input("""Enter your poem here, or enter 'n' to use a pre-loaded sonnet. """)
+    print_user_poem = input("""Enter your poem file name here, or enter 'n' to use a pre-loaded sonnet. """)
     if print_user_poem == "n":
         poem_file = poem_file
     else:
-        poem_file == input
-    print_option = input("How would you like your poem printed? backwards, line-random, or word-random? ")
-    if print_option == "backwards":
-        lines_printed_backwards(poem_file)
-    elif print_option == "line-random":
-        lines_printed_random(poem_file)
-    elif print_option == "word-random":
-        words_printed_random(poem_file)
-    else:
-        print ("Not an option. Please try again.")
+        poem_file = input("Enter file name ")
+        print_option = input("How would you like your poem printed? backwards, line-random, or word-random? ")
+        if print_option == "backwards":
+            lines_printed_backwards(poem_file)
+        elif print_option == "line-random":
+            lines_printed_random(poem_file)
+        elif print_option == "word-random":
+            words_printed_random(poem_file)
+        else:
+            print ("Not an option. Please try again.")
         
 if __name__ == '__main__':
     main()
