@@ -44,7 +44,7 @@ def words_printed_random(poem_file):
 # main function which runs the program
 def main():
     poem_file = "poems/Sonnet_41.txt"
-    print_user_poem = input("""Enter your poem file name here, or enter 'n' to use a pre-loaded sonnet. """)
+    print_user_poem = input("""Would you like to use your own choice of poem? If not, enter 'n' to use a pre-loaded sonnet. """)
     if print_user_poem == "n":
         poem_file = poem_file
     else:
